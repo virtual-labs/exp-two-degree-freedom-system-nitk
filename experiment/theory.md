@@ -13,6 +13,7 @@ Now, to analyze the vibration of the motor with rotation of unbalance of mass is
 <center>
 
 ![](images/4.jpg)
+
 Fig. 2. Schematic of motor of unbalanced mass as 2DOF a. Combined system b. Free body diagram
 
 </center>
