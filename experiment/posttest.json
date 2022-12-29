@@ -2,46 +2,12 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "A two-degree-of-freedom system has",
+      "question": "For nontrivial solution of amplitudes, the determinant of coefficient matrix must be equal to",
       "answers": {
-        "a": "one normal mode",
-        "b": "two normal modes",
-        "c": "many normal modes",
-        "d": "None of the above"
-      },
-      "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
-      },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "The equations of motion of a two-degree-of-freedom system are in general",
-      "answers": {
-        "a": "coupled",
-        "b": "uncoupled",
-        "c": "linear",
-        "d": "None of the above"
-      },
-      "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
-      },
-      "correctAnswer": "a",
-      "difficulty": "intermediate"
-    },
-    {
-      "question": "The configuration of a system vibrating at one of its natural frequencies is called",
-      "answers": {
-        "a": "natural mode",
-        "b": "natural frequency",
-        "c": "solution",
-        "d": "None of the above"
+        "a": "First natual frequency",
+        "b": "Zero",
+        "c": "Applied Force",
+        "d": "Second natural frequency"
       },
       "explanations": {
         "a": "",
@@ -53,11 +19,12 @@
       "difficulty": "intermediate"
     },
     {
-      "question": "The equations of motion of a two-degree-of-freedom system are in general in the form of",
+      "question": "In elastic or static coupling, the resulting motion is",
       "answers": {
-        "a": "coupled algebraic equations",
-        "b": "coupled differential equations",
-        "c": "uncoupled equations"        
+        "a": "Rotational",
+        "b": "Translational",
+        "c": "Both a and b",
+        "d": "None of the above"
       },
       "explanations": {
         "a": "",
@@ -65,16 +32,50 @@
         "c": "",
         "d": ""
       },
-      "correctAnswer": "b",
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "In dynamic coupling, the resulting motion is",
+      "answers": {
+        "a": "In direction of y axis",
+        "b": "up",
+        "c": "down",
+        "d": "All the above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "A system has a non diagonal stifness matrix, it has",
+      "answers": {
+        "a": "elastic coupling",
+        "b": "static coupling",
+        "c": "Both a and b",
+        "d":"None of the above"        
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
       "difficulty": "advanced"
     },
     {
-      "question": "what is value of amplitude of vibration at node and antinode respectively",
+      "question": "A system has a non diagonal damping matrix, it has",
       "answers": {
-        "a": "zero, zero",
-        "b": "zero, maximum",
-        "c": "maximum, zero",
-        "d": "maximum,maximum"
+        "a": "Damping Coupling",
+        "b": "Velocity coupling",
+        "c": "Both a and b",
+        "d": "All the above"
       },
       "explanations": {
         "a": "",

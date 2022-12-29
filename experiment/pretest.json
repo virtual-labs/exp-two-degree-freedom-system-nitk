@@ -2,28 +2,11 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "The number of distinct natural frequencies for an n-degree-of-freedom system can be",
+      "question": "For a 2DOF system, _______ is symmetric",
       "answers": {
-        "a": "1",
-        "b": "∞",
-        "c": "n",
-        "d": "0"
-      },
-      "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "The characteristic equation of an n-degree-of-freedom system is a",
-      "answers": {
-        "a": "transcendental equation",
-        "b": "polynomial of degree n",
-        "c": "differential equation of order n",
+        "a": "mass matrix",
+        "b": "stifness matirx",
+        "c": "damping matrix",
         "d": "All of the above"
       },
       "explanations": {
@@ -32,49 +15,58 @@
         "c": "",
         "d": ""
       },
-      "correctAnswer": "b",
-      "difficulty": "intermediate"
+      "correctAnswer": "d",
+      "difficulty": "beginner"
     },
     {
-      "question": "The fundamental natural frequency of a system is",
+      "question": "__________ motion is assumed for two masses",
       "answers": {
-        "a": "the largest value",
-        "b": "the smallest value",
-        "c": "any value",
-        "d": "None of the above"
+        "a": "Random",
+        "b": "Linear",
+        "c": "Non-Linear",
+        "d": "Harmonic"
       },
       "explanations": {
         "a": "",
         "b": "",
         "c": "",
         "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Normal modes corresponds to frequencies",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "",
+        "b": ""
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "When a two-degree-of-freedom system is subjected to a harmonic force, the system",
+      "question": "Resonance occurs under harmonic excitation ",
       "answers": {
-        "a": "frequency of applied force",
-        "b": "smaller natural frequency",
-        "c": "larger natural frequency",
-        "d": "None of the above"
+        "a": "True",
+        "b": "False"
       },
       "explanations": {
         "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "b": ""
       },
-      "correctAnswer": "c",
+      "correctAnswer": "a",
       "difficulty": "intermediate"
     },
     {
-      "question": "The number of degrees of freedom of a vibrating system depends on",
+      "question": "Matrices [m], [c] and [k] are diagonal because",
       "answers": {
-        "a": "number of masses",
-        "b": "number of masses and degrees of freedom of each mass",
-        "c": "number of coordinates used to describe the position of each mass",
+        "a": "c<sub>2</sub>=k<sub>2</sub>=0",
+        "b": "masses are not physically connected",
+        "c": "both a and b",
         "d": "none of the above"
       },
       "explanations": {
