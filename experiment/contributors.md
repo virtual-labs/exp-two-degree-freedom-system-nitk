@@ -14,7 +14,7 @@
 
 ### Content Developers:
 
-| SNo. |       Name        | Institute |
-| :--: | :---------------: | :-------: |
-|  1   | Dr. Susheel Kumar |   NITK    |
-|  2   |  Nagaraj Kamath   |   NITK    |
+| SNo. |       Name       | Institute |
+| :--: | :--------------: | :-------: |
+|  1   | Dr Susheel Kumar |   NITK    |
+|  2   |  Nagaraj Kamath  |   NITK    |
