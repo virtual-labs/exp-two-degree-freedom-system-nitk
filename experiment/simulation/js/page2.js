@@ -19,10 +19,10 @@
 
     strokeWeight(1);
     textSize(13);
-    text('THE FIRST NATURAL FREQUENCY OF SYSTEM (ω1) : '+spring1.w1.toFixed(4)+' rad/s',30,150);
-    text('THE SECOND NATURAL FREQUENCY OF SYSTEM (ω2) : '+spring1.w2.toFixed(4)+' rad/s',30,200);
-    text('THE FIRST MODE SHAPE RATIO [(X1/X2) AT ω1] : '+spring1.ar1.toFixed(4),30,250);
-    text('THE SECOND MODE SHAPE RATIO [(X1/X2) AT ω2] : '+spring1.ar2.toFixed(4),30,300);
+    text('The first natural frequency of the system (ω1) : '+spring1.w1.toFixed(4)+' rad/s',30,150);
+    text('The second natural frequency of the system (ω2) : '+spring1.w2.toFixed(4)+' rad/s',30,200);
+    text('The first mode shape ratio [(X1/X2) AT ω1] : '+spring1.ar1.toFixed(4),30,250);
+    text('The second mode shape ratio [(X1/X2) AT ω2] : '+spring1.ar2.toFixed(4),30,300);
     if(spring1.x1==spring1.x2){
     text('THE EQUATION OF MOTION OF M1 : '+spring1.ar1.toFixed(4) * spring1.x2.toFixed(4)+' cos('+spring1.w1.toFixed(4)+'t)',30,350);
     text('THE EQUATION OF MOTION OF M2 : '+spring1.x2.toFixed(2)+' cos('+spring1.w2.toFixed(4)+'t)',30,400);

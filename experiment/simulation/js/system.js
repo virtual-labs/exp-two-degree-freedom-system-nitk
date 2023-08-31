@@ -162,6 +162,7 @@ class System  {
             return (200);
         }
     }
+    
     static mag_func2(x, obj)  {
         let mu = obj.m1/obj.m2;
         let temp1 = x;

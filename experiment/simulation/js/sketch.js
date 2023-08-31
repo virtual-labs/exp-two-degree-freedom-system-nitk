@@ -45,12 +45,16 @@ let button2;
 let button3;
 let button4;
 let button5;
+let button6 ; 
+let button7 ; 
+ 
 let spr;
 
 // pages
 let page1 = true;
 let page2 = false;
 let page3 = false;
+let page4 = false; 
 
 // animation
 let animation = true;
@@ -82,14 +86,14 @@ function setup() {
 
     position_graph2 = new Graph(50, 210, 100, 220, "x2", "t");
 
-    magFac1 = new DynamicGraph(50, 400, 300, 220, "X1/Xst", "ω/ω2", 0,7,0,10, System.mag_func1);
-    magFac2 = new DynamicGraph(50, 400, 300, 220, "X2/Xst", "ω/ω2",0, 7,0,10, System.mag_func2);
+    magFac1 = new DynamicGraph(70, 500, 320, 300, "X/Xst", "ω/ωn", 0,7,0,10, System.mag_func1,0);
+    magFac2 = new DynamicGraph(70, 500, 320, 300, "X/Xst", "ω/ωn",0, 7,0,10, System.mag_func2,255);
 
     //magFac = new DynamicGraph(125, 325, 230, 290, "Magnification Factor", "n", 0, 2.5, 0, 7.5, System.mag_func);
     //phaseAng = new DynamicGraph(125, 495, 150, 290, "Phase Angle", "n", 0, 2.5, 0, 180, System.phase_func);
 
-    x1 = new NumberInput(620, 140, "Xo1(m)",-30, 30,0 ,0.5,1, true); //(x, y, label, min, max, iniVal, change,fine_change, ifSlider)
-    x2= new NumberInput(620, 190, "Xo2(m)", -30, 30, 0, 0.5,1, true);
+    x1 = new NumberInput(620, 140, "Xo1(m)",-30, 30,5 ,0.5,1, true); //(x, y, label, min, max, iniVal, change,fine_change, ifSlider)
+    x2= new NumberInput(620, 190, "Xo2(m)", -30, 30, -5, 0.5,1, true);
     k1 = new NumberInput(620, 240, "k1 (N/m)",5, 20, 5, 2,1, true);
     m1 = new NumberInput(620, 290, "m1(kg)", 10, 50, 10, 1,1, true);
     k2 = new NumberInput(620, 340, "k2 (N/m)", 5, 20 ,5, 2,1, true);
@@ -99,7 +103,8 @@ function setup() {
     button3 = new Button(645,460,back)
     button4 = new Button(705, 460, graph)
     button5 = new Button(645,470,back)
-
+    button6 = new Button(706,470 , graph) ; 
+    button7 = new Button(706,500  , back) ;
     
 }
 
@@ -114,6 +119,11 @@ function draw() {
 
     if (page3){
         runPage3();
+    }
+
+    if(page4){
+        console.log("i am  page")
+        runPage4();
     }
 }
 
