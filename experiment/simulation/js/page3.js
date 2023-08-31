@@ -102,6 +102,7 @@
     spring1.initialise(x1.inp,x2.inp,k1.inp,m1.inp,k2.inp,m2.inp);
     spring1.update(t, factor);
     button5.draw()
+    button6.draw();
     x1.draw();
     x2.draw();
     k1.draw();
