@@ -1,1 +1,1 @@
-## Motor on a Foundation as a Two Degree of Freedom System - Free vibration
+## Motor on a Foundation as a 2DOF system - Free Vibration
