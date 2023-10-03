@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "For nontrivial solution of amplitudes, the determinant of coefficient matrix must be equal to",
+      "answers": {
+        "a": "First natual frequency",
+        "b": "Zero",
+        "c": "Applied Force",
+        "d": "Second natural frequency"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "In elastic or static coupling, the resulting motion is",
+      "answers": {
+        "a": "Rotational",
+        "b": "Translational",
+        "c": "Both a and b",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "In dynamic coupling, the resulting motion is",
+      "answers": {
+        "a": "In direction of y axis",
+        "b": "up",
+        "c": "down",
+        "d": "All the above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "A system has a non diagonal stifness matrix, it has",
+      "answers": {
+        "a": "elastic coupling",
+        "b": "static coupling",
+        "c": "Both a and b",
+        "d":"None of the above"        
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "A system has a non diagonal damping matrix, it has",
+      "answers": {
+        "a": "Damping Coupling",
+        "b": "Velocity coupling",
+        "c": "Both a and b",
+        "d": "All the above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    }
+  ]
+}
