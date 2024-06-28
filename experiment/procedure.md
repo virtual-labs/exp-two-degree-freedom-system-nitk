@@ -1,18 +1,29 @@
-1. Clicking on the simulation tab brings the user to the first page of simulation as shown below.
+### Procedure
 
-![](images/1.png)
+<div style="text-align:left">
+  Click on the Simulation icon <img src="images/simulation.png" alt="Alt text" style="height:80px; width:80px;">  to view the simulation. 
 
-Here the user can use the slider to set the values and the simulation of the spring-masss system will change accordingly.
-The comments section will show the first natural frequency &omega;<sub>1</sub> and second natural frequency &omega;<sub>2</sub>
-<br>
+   ![Alt text](images/Simscreen1.png)
+   
+   In order to view the variable section click on the Variable icon. <img src="images/var1.png" alt="Alt text" style="height:80px; width:80px;">
 
-2.  On clicking the next button, which will take the user to the next page where the first and second frequencies, mode shapes and finally equation of motion are displayed.
+   ![Alt text](images/variable1.png)
 
-![](images/13.png)
+   Click on Play icon <img src="images/play1.png" alt="Alt text" style="height:80px; width:80px;"> to run the simulation and click on Pause icon <img src="images/pause.png" alt="Alt text" style="height:80px; width:80px;"> to stop it.
 
-<br> 
+   <!-- Click on the Next icon  <img src="images/next2.png" alt="Alt text" style="height:80px; width:80px;"> to go further.   -->
+ Click on the Next icon  <img src="images/next2.png" alt="Alt text" style="height:80px; width:80px;"> to go further.  
 
-3. On clicking the next button which will take the user to the final page where the mode shapes are displayed.
+   ![Alt text](images/screen0.png)
+    
 
-![](images/2.png)
-
+   Click on the Next or Prev icon<img src="images/prenex.png" alt="Alt text" style="height:80px; width:80px;"> to cycle through different pages. 
+  ![Alt text](images/screen1.png)
+  
+ 
+  
+   ![Alt text](images/screen2.png)
+   
+click on the result icon to view the result.<img src="images/result.png" alt="Alt text" style="height:80px; width:80px;"> 
+![Alt text](images/result1.png)
+</div>
