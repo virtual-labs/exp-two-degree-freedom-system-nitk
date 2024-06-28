@@ -10,10 +10,10 @@
         "d": "All of the above"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "For a 2DOF system, not only mass matrix, but stiffness and damping matrix are also symmetric.",
+        "b": "For a 2DOF system, not only stiffness matrix, but mass and damping matrix are also symmetric.",
+        "c": "For a 2DOF system, not only damping matrix, but stiffness and mass matrix are also symmetric.",
+        "d": "For a 2DOF system, mass, stiffness and damping matrix are all symmetric."
       },
       "correctAnswer": "d",
       "difficulty": "beginner"
@@ -27,10 +27,10 @@
         "d": "Harmonic"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "The right answer is (d). Simple harmonic motion is assumed for 2 masses in vibrations.",
+        "b": "The right answer is (d). Simple harmonic motion is assumed for 2 masses in vibrations.",
+        "c": "The right answer is (d). Simple harmonic motion is assumed for 2 masses in vibrations.",
+        "d": "Correct, the right answer is (d). Simple harmonic motion is assumed for 2 masses in vibrations."
       },
       "correctAnswer": "d",
       "difficulty": "beginner"
@@ -42,8 +42,8 @@
         "b": "False"
       },
       "explanations": {
-        "a": "",
-        "b": ""
+        "a": "Correct, the right answer is (a). Normal modes in mechanical systems correspond to natural frequencies. These frequencies represent the system’s inherent vibration modes, and each mode has a specific frequency at which it vibrates.",
+        "b": "The right answer is (a). Normal modes in mechanical systems correspond to natural frequencies. These frequencies represent the system’s inherent vibration modes, and each mode has a specific frequency at which it vibrates."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
@@ -55,8 +55,8 @@
         "b": "False"
       },
       "explanations": {
-        "a": "",
-        "b": ""
+        "a": "Correct, the right answer is (a). Resonance indeed occurs under harmonic excitation. When a system is subjected to an external force with a frequency close to its natural frequency (or one of its natural frequencies), it can experience significant vibration amplitudes. This phenomenon is known as resonance.",
+        "b": "The right answer is (a). Resonance indeed occurs under harmonic excitation. When a system is subjected to an external force with a frequency close to its natural frequency (or one of its natural frequencies), it can experience significant vibration amplitudes. This phenomenon is known as resonance."
       },
       "correctAnswer": "a",
       "difficulty": "intermediate"
@@ -70,10 +70,10 @@
         "d": "none of the above"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "The right answer is (c). Matrices [m], [c] and [k] are diagonal because c2​=k2​=0 imply that there is no coupling between the second DOF and other DOFs and When masses are not physically connected (i.e., they are isolated), the mass matrix can be diagonal.",
+        "b": "The right answer is (c). Matrices [m], [c] and [k] are diagonal because c2​=k2​=0 imply that there is no coupling between the second DOF and other DOFs and When masses are not physically connected (i.e., they are isolated), the mass matrix can be diagonal.",
+        "c": "Correct, the right answer is (c). Matrices [m], [c] and [k] are diagonal because c2​=k2​=0 imply that there is no coupling between the second DOF and other DOFs and When masses are not physically connected (i.e., they are isolated), the mass matrix can be diagonal.",
+        "d": "The right answer is (c). Matrices [m], [c] and [k] are diagonal because c2​=k2​=0 imply that there is no coupling between the second DOF and other DOFs and When masses are not physically connected (i.e., they are isolated), the mass matrix can be diagonal."
       },
       "correctAnswer": "c",
       "difficulty": "advanced"

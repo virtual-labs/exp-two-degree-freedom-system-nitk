@@ -1,5 +1,5 @@
-class DynamicGraph  {
-    constructor(x, y, h, w, yLabel, xLabel, minX, maxX, minY, maxY, func , tplgy) {
+class DynamicGraph {
+    constructor(x, y, h, w, yLabel, xLabel, minX, maxX, minY, maxY, func, color) {
         this.length = 0;
         this.x = x;
         this.y = y;
@@ -12,43 +12,39 @@ class DynamicGraph  {
         this.xLabel = xLabel;
         this.yLabel = yLabel;
         this.graphs = [];
-        this.function = func
-        this.tplgy = tplgy ; 
+        this.function = func;
+        this.color = color; // Add color property
     }
 
-    initialise()    {
-        if (this.graphs.length>1){
-            this.graphs.splice(0,1);
+    initialise() {
+        if (this.graphs.length > 1) {
+            this.graphs.splice(0, 1);
         }
         let temp = [];
-        for (let x = 0; x < this.w; x+=1)   {   
-            
-            let tempx = map(x,0, this.w,this.minX, this.maxX) ;
-
-            let y = map(this.function(tempx, spring1),this.minY,this.maxY,0,this.h);
-            if (y > this.h){
+        for (let x = 0; x < this.w; x += 1) {
+            let tempx = map(x, 0, this.w, this.minX, this.maxX);
+            let y = map(this.function(tempx, spring1), this.minY, this.maxY, 0, this.h);
+            if (y > this.h) {
                 y = this.h;
-
             }
-            temp.push([x, y])
+            temp.push([x, y]);
         }
-        temp.label = [255,0,this.tplgy];
+        temp.label = this.color; // Use the color property
         this.graphs.push(temp);
     }
 
-    draw()  {
+    draw() {
         push();
 
-        for (let n = 0; n<this.graphs.length ; n++)   {
+        for (let n = 0; n < this.graphs.length; n++) {
             beginShape();
             stroke(this.graphs[n].label[0], this.graphs[n].label[1], this.graphs[n].label[2]);
             strokeWeight(1);
             noFill();
-            for (let i = 0; i< this.graphs[n].length ; i++) {
-              
+            for (let i = 0; i < this.graphs[n].length; i++) {
                 vertex(this.x + this.graphs[n][i][0], this.y - this.graphs[n][i][1]);
             }
-            endShape();       
+            endShape();
         }
 
         stroke(0);

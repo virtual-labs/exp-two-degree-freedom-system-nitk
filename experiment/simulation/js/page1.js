@@ -1,83 +1,92 @@
+let showCodeBlock = true;
 function runPage1() {
-    background(255);
-    image(bg, 0, 0)
-    stroke(0);
-    fill(0);
+  if (!page1 || page3 || page4) {
+    return;
+  }
+  // background(255);
+  // image(bg, 0, 0);
+  stroke(0);
+  fill(0);
 
-    push();
-    textSize(21);
-    // textFont("Times");
-    textFont("Comic Sans MS")
-    text('Motor on a Foundation  as 2DOF System ',200, 40);
-    text('Free Vibration with rotating unbalance' , 210 , 60);
+  push();
 
-    textSize(16);
-    text("CONTROLS", 655, 417);
-    text("VARIABLES", 655, 107);
-    pop();
+  pop();
 
-    push();
-    stroke(0, 100);
-    for (let i = 20; i < 591; i++) {
-        point(i, 480);
-        i += 2;
-    }
-    for (let i = 480; i < 570; i++) {
-        point(300, i);
-        i += 2;
-    }
-    pop();
+  textSize(19);
+  stroke("black");
+  textFont("'Nunito', sans-serif;");
+  strokeWeight(0);
+  text("Free Vibration System ", 180, 30);
 
-    // spring1.initialise(x1.inp,x2.inp,k1.inp,m1.inp,k2.inp,m2.inp);
-    // spring1.update(t, factor);
-    // spring1.show(0, 1, 0);
+  push();
+  stroke(0, 100);
+  for (let i = 20; i < 591; i++) {
+    point(i, 480);
+    i += 2;
+  }
+  for (let i = 480; i < 970; i++) {
+    point(300, i);
+    i += 2;
+  }
+  pop();
 
-    position_graph1.update(spring1.y1);
-    position_graph1.draw(255, 0,0)
+  F0 = $("#fSpinner").spinner("value");
+  w = $("#omegaSpinner").spinner("value");
+  k1 = $("#k1Spinner").spinner("value");
+  m1 = $("#m1Spinner").spinner("value");
+  k2 = $("#k2Spinner").spinner("value");
+  m2 = $("#m2Spinner").spinner("value");
 
-    position_graph2.update(spring1.y2);
-    position_graph2.draw(255, 0, 0)
+  if(spring1.x1d.toFixed(4) <-60 || spring1.x2d.toFixed(4) < -60){
+    textFont("nunito");
+  textSize(11);
+  stroke(0);
+  strokeWeight(0.5);
+  text("Warning:The solution goes out of bounds as it's reaching the resonance.", 100, 440);
 
-    strokeWeight(0)
+  }
+  if(spring1.x1dd.toFixed(4) < -100 || spring1.x2dd.toFixed(4) < -100){
+    textFont("nunito");
+  textSize(11);
+  stroke(0);
+  strokeWeight(0.5);
+  text("Warning:The solution goes out of bounds as it's reaching the resonance.", 100, 440);
 
-    if(x1.inp!=0 || x2.inp!=0){
-    textSize(14);
-    textFont("Comic Sans MS")
-    fill(231, 114, 43);
-    text('ω1 = ' + spring1.w1.toFixed(4) + " rad/s", 50, 510);
-    text('ω2 = ' + spring1.w2.toFixed(4) + " rad/s", 50, 550);
-    text('Mode 1 = ' + spring1.ar1.toFixed(4) , 310, 510);
-    text('Mode 2 = ' + spring1.ar2.toFixed(4) , 310, 550);
-    }
-    // text('ω1/ω2 = ' + ((spring1.w1/spring1.w2)).toFixed(4) + " rad/s", 310, 510)
-    spring1.initialise(x1.inp,x2.inp,k1.inp,m1.inp,k2.inp,m2.inp);
-    spring1.update(t, factor);
-    spring1.show(0, 1, 0);
-    strokeWeight(0.5);    
-    // line(0, 440, 600, 440)
-    // line(300,440,300,580)
+  }
 
-    line (spring1.masscoordinates[0], spring1.masscoordinates[1], position_graph1.graphend[0], position_graph1.graphend[1])
-    line (spring1.masscoordinates[2], spring1.masscoordinates[3], position_graph2.graphend[0], position_graph2.graphend[1])
+  spring1.initialise(F0, w, k1, m1, k2, m2);
+  spring1.update(t, factor);
+  spring1.show(0, 1, 0);
 
-    //text('η = ' + (slider_ang_freq.inp / spring1.wn).toFixed(4), 310, 535);
-    //text('z = ' + z.inp.toFixed(4), 310, 550);
-    fill(0,0,0)
-    textSize(20);
-    text("Free Vibration System", 115, 110);
+  position_graph1.update(spring1.y1);
+  position_graph1.draw(255, 0, 0);
 
-    x1.draw();
-    x2.draw();
-    k1.draw();
-    m1.draw();
-    k2.draw();
-    m2.draw();
+  position_graph2.update(spring1.y2);
+  position_graph2.draw(255, 0, 0);
 
+  strokeWeight(0);
 
-        
-        if(x1.inp!=0 || x2.inp!=0){
-            button1.draw();
-            button2.draw();
-        }
-    t = t + dt;
+  document.getElementById("wd").textContent = spring1.w1.toFixed(4) + " rad/s";
+  // console.log("dhfg");
+  document.getElementById("wn").textContent = spring1.w2.toFixed(4) + " rad/s";
+
+  document.getElementById("mode1").textContent = spring1.ar1.toFixed(4);
+  document.getElementById("mode2").textContent = spring1.ar2.toFixed(4);
+
+  strokeWeight(0.5);
+
+  line(
+    spring1.masscoordinates[0],
+    spring1.masscoordinates[1],
+    position_graph1.graphend[0],
+    position_graph1.graphend[1]
+  );
+  line(
+    spring1.masscoordinates[2],
+    spring1.masscoordinates[3],
+    position_graph2.graphend[0],
+    position_graph2.graphend[1]
+  );
+
+  t = t + dt;
 }
