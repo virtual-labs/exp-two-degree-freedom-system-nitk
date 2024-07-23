@@ -73,7 +73,7 @@ function preload() {
   //   graph = loadImage("images/graphbutton.png");
   //   back = loadImage("images/bluebkdulls.png");
   //   bg = loadImage("images/frame_copper_ver02.png");
-  spr = loadImage("Images/spring.png");
+  spr = loadImage("images/spring.png");
 }
 
 function setup() {
