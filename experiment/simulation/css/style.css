@@ -62,6 +62,12 @@ h1 {
   font-weight: 900;
   cursor: pointer;
 }
+
+#graphbutton{
+  cursor: pointer;
+}
+
+
 /* .btn-top1{  
   display: flex;
   align-items: center;
