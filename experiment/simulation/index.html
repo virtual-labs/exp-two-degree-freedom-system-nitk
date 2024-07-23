@@ -49,7 +49,7 @@
   <div class="title-div-container">
     <div class="title-div">
       <div class="logo-div">
-        <a href="#"><img src="Images/logo_nitk.png" alt="Logo" class="logo" /></a>
+        <a href="#"><img src="images/logo_nitk.png" alt="Logo" class="logo" /></a>
       </div>
       <h1>Motor on a Foundation as 2DOF System <br> Free vibration with rotating unbalance</h1>
     </div>
@@ -63,7 +63,7 @@
               viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" class="icons">
               <path stroke-linecap="round" stroke-linejoin="round"
                 d="M3 8.25V18a2.25 2.25 0 002.25 2.25h13.5A2.25 2.25 0 0021 18V8.25m-18 0V6a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6zM7.5 6h.008v.008H7.5V6zm2.25 0h.008v.008H9.75V6z" />
-              </svg>
+            </svg>
           </a>
           <span>Simulation</span>
         </li>
@@ -73,7 +73,7 @@
               viewBox="0 0 24 24" stroke-width="1.5" stroke="#089B93" class="icons">
               <path stroke-linecap="round" stroke-linejoin="round"
                 d="M4.745 3A23.933 23.933 0 003 12c0 3.183.62 6.22 1.745 9M19.5 3c.967 2.78 1.5 5.817 1.5 9s-.533 6.22-1.5 9M8.25 8.885l1.444-.89a.75.75 0 011.105.402l2.402 7.206a.75.75 0 001.104.401l1.445-.889m-8.25.75l.213.09a1.687 1.687 0 002.062-.617l4.45-6.676a1.688 1.688 0 012.062-.618l.213.09" />
-              </svg></a>
+            </svg></a>
           <span>Variables</span>
         </li>
 
@@ -89,26 +89,28 @@
 
 
         <li class="tool-list">
-          <img id="playpausebutton" onclick="simstate()" title="Play/Pause" ontouchstart="simstate()" src="Images/bluepausedull.svg" alt=""
-            class="icons" style="cursor: pointer;"/>
+          <img id="playpausebutton" onclick="simstate()" ontouchstart="simstate()" src="images/bluepausedull.svg" alt=""
+            class="icons" style="cursor: pointer;" title="Play/Pause" />
           <span class="playPause">Pause</span>
         </li>
 
         <li class="tool-list graph-button" title="Next">
-          <img id="graphbutton" onclick="graphPlot()" ontouchstart="graphPlot()" src="Images/bluebkwdulls.svg" alt=""
-            class="icons graph graph-zero" />
+          <img id="graphbutton" onclick="graphPlot()" ontouchstart="graphPlot()" src="images/bluebkwdulls.svg" alt=""
+            class="icons graph graph-zero" title="Next" />
           <span class="">Next</span>
         </li>
 
         <li class="tool-list graph-div">
           <div class="tool-list--two ">
-            <img id="screenchangesbackward"  onclick="screenChangePrevious()" ontouchstart="screenChangePrevious()"
-              src="Images/bluebkdulls.svg" title="Previous" alt="" class="icons graph graph-one display-hide" style="cursor: pointer;" />
-            <img id="screenchangesforward"  onclick="screenchangeMag()" ontouchstart="screenchangeMag()"
-              src="Images/bluebkwdulls.svg" title="Next" alt="" class="icons graph graph-two display-hide" style="cursor: pointer;"/>
+            <img id="screenchangesbackward" onclick="screenChangePrevious()" ontouchstart="screenChangePrevious()"
+              src="images/bluebkdulls.svg" title="Previous" alt="" class="icons graph graph-one display-hide"
+              style="cursor: pointer;" />
+            <img id="screenchangesforward" onclick="screenchangeMag()" ontouchstart="screenchangeMag()"
+              src="images/bluebkwdulls.svg" title="Next" alt="" class="icons graph graph-two display-hide"
+              style="cursor: pointer;" />
 
             <img id="screenchangesforward1" onclick="screenchangeMag1()" ontouchstart="screenchangeMag1()"
-              src="Images/bluebkwdulls.svg" alt="" class="icons graph graph-three display-hide" />
+              src="images/bluebkwdulls.svg" alt="" class="icons graph graph-three display-hide" />
 
           </div>
           <span></span>
@@ -141,7 +143,7 @@
               <div class="var-div">
                 <div class="input-container">
                   <label for="fSpinner">X<sub>0</sub><sub>1</sub></label>
-                  <input class="var-spinner" id="fSpinner" name="value" readonly/>
+                  <input class="var-spinner" id="fSpinner" name="value" readonly />
                   <span>m</span>
                 </div>
                 <div class="var-slider" id="fSlider"></div>
@@ -149,7 +151,7 @@
               <div class="var-div">
                 <div class="input-container">
                   <label for="omegaSpinner">X<sub>0</sub><sub>2</sub></label>
-                  <input class="var-spinner" id="omegaSpinner" name="value" readonly/>
+                  <input class="var-spinner" id="omegaSpinner" name="value" readonly />
                   <span>m</span>
                 </div>
                 <div class="var-slider" id="omegaSlider"></div>
@@ -157,7 +159,7 @@
               <div class="var-div">
                 <div class="input-container">
                   <label for="k1Spinner">k<sub>1</sub></label>
-                  <input class="var-spinner" id="k1Spinner" name="value" readonly/>
+                  <input class="var-spinner" id="k1Spinner" name="value" readonly />
                   <span>N/m</span>
                 </div>
                 <div class="var-slider" id="k1Slider"></div>
@@ -165,7 +167,7 @@
               <div class="var-div">
                 <div class="input-container">
                   <label for="m1Spinner">m<sub>1</sub></label>
-                  <input class="var-spinner" id="m1Spinner" name="value" readonly/>
+                  <input class="var-spinner" id="m1Spinner" name="value" readonly />
                   <span>kg</span>
                 </div>
                 <div class="var-slider" id="m1Slider"></div>
@@ -173,7 +175,7 @@
               <div class="var-div">
                 <div class="input-container">
                   <label for="k2Spinner">k<sub>2</sub></label>
-                  <input class="var-spinner" id="k2Spinner" name="value" readonly/>
+                  <input class="var-spinner" id="k2Spinner" name="value" readonly />
                   <span>N/m</span>
                 </div>
                 <div class="var-slider" id="k2Slider"></div>
@@ -181,22 +183,17 @@
               <div class="var-div">
                 <div class="input-container">
                   <label for="m2Spinner">m<sub>2</sub></label>
-                  <input class="var-spinner" id="m2Spinner" name="value" readonly/>
+                  <input class="var-spinner" id="m2Spinner" name="value" readonly />
                   <span>kg</span>
                 </div>
                 <div class="var-slider" id="m2Slider"></div>
               </div>
             </div>
           </div>
-          <button
-          id="var-top"
-          class="btn btn-top hide" 
-          title="Move to Top"
-          onclick="movetoTop()"
-          ontouchstart="movetoTop"
-        >
-          ↑
-        </button>
+          <button id="var-top" class="btn btn-top hide" title="Move to Top" onclick="movetoTop()"
+            ontouchstart="movetoTop">
+            ↑
+          </button>
         </div>
         <div id="comments" class="main__task-div">
           <h3 class="task-title">Results</h3>
@@ -219,14 +216,9 @@
               <!-- <p>&#969;<sub></sub>/&#969;<sub>1</sub> = <span id="wn1"></span></p>  -->
             </div>
           </div>
-          <button
-          class="btn btn-top hide"
-          title="Move to Top"
-          onclick="movetoTop()"
-          ontouchstart="movetoTop"
-        >
-          ↑
-        </button>
+          <button class="btn btn-top hide" title="Move to Top" onclick="movetoTop()" ontouchstart="movetoTop">
+            ↑
+          </button>
         </div>
         <div class="main__task-div footer">
           <p>Copyright © SOLVE The Virtual Lab @ NITK Surathkal</p>
