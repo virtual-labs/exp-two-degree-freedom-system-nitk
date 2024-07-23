@@ -40,7 +40,7 @@ let magFac2;
 // factor
 let factor = 1;
 
-// images
+// Images
 let img;
 let button1;
 let button2;
@@ -73,7 +73,7 @@ function preload() {
   //   graph = loadImage("images/graphbutton.png");
   //   back = loadImage("images/bluebkdulls.png");
   //   bg = loadImage("images/frame_copper_ver02.png");
-  spr = loadImage("images/spring.png");
+  spr = loadImage("Images/spring.png");
 }
 
 function setup() {
@@ -198,7 +198,7 @@ function simstate() {
   if (animation) {
     noLoop();
     animation = false;
-    document.getElementById("playpausebutton").src = "images/blueplaydull.svg";
+    document.getElementById("playpausebutton").src = "Images/blueplaydull.svg";
     document.querySelector(".playPause").textContent = "Play";
     nextButton.onclick = null; // Disable the next button
     // nextButton.style.cursor = "not-allowed"; // Update the cursor to indicate it's not clickable
@@ -214,7 +214,7 @@ function simstate() {
   } else {
     loop();
     animation = true;
-    document.getElementById("playpausebutton").src = "images/bluepausedull.svg";
+    document.getElementById("playpausebutton").src = "Images/bluepausedull.svg";
     document.querySelector(".playPause").textContent = "Pause";
   
 
