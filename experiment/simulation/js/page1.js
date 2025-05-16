@@ -1,5 +1,7 @@
 let showCodeBlock = true;
 function runPage1() {
+    document.querySelector("#canvas-container").style.display = "block";
+  document.querySelector("#observations").style.display = "none";
   if (!page1 || page3 || page4) {
     return;
   }
@@ -12,7 +14,7 @@ function runPage1() {
 
   pop();
 
-  textSize(19);
+  textSize(16);
   stroke("black");
   textFont("'Nunito', sans-serif;");
   strokeWeight(0);

@@ -1,4 +1,6 @@
 ﻿function runPage3() {
+      document.querySelector("#canvas-container").style.display = "block";
+  document.querySelector("#observations").style.display = "none";
   if (!page3 || page4) {
     return;
   }
@@ -69,10 +71,10 @@
   if (spring1.x1 == spring1.x2) {
 
     textFont("'Nunito', sans-serif");
-    textSize(14.5);
+    textSize(14);
     text("MODE SHAPE", 250, 30); // Adjusted from (250, 110)
     textFont("'Nunito', sans-serif");
-    textSize(15.5);
+    textSize(13);
     strokeWeight(0.3);
     text(
       "When the initial excitation is given same to both masses in same direction, it",
@@ -93,10 +95,10 @@
   } else if (spring1.x1 == (-spring1.x2)) {
     
     textFont("'Nunito', sans-serif;");
-    textSize(20);
+    textSize(14);
     text("MODE SHAPE", 250, 50);
     textFont("'Nunito', sans-serif");
-  textSize(15.5);
+  textSize(13);
 
   strokeWeight(0.3);
     text(
@@ -118,9 +120,9 @@
     line(300 + spring1.x2 * 2, 300, 300, 400); // Adjusted from (300 + (spring1.x2 * 2), 400, 300, 500)
   } else {
     textFont("'Nunito', sans-serif;");  
-    textSize(20);
+    textSize(16);
     text("MODE SHAPES", 215, 55);
-    textSize(15);
+    textSize(14);
     text("FIRST MODE SHAPE", 90, 90);
     text("SECOND MODE SHAPE", 370, 90);
 

@@ -1,4 +1,6 @@
 function runPage4() {
+      document.querySelector("#canvas-container").style.display = "block";
+  document.querySelector("#observations").style.display = "none";
   if (!page4) {
     return;
   }
