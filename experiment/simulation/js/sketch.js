@@ -118,7 +118,7 @@ function setup() {
     0,
     10,
     System.mag_func2,
-    [255, 23, 253] 
+    [125, 8, 141] 
   );
 
   //magFac = new DynamicGraph(125, 325, 230, 290, "Magnification Factor", "n", 0, 2.5, 0, 7.5, System.mag_func);
