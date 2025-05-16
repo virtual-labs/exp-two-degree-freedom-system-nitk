@@ -50,8 +50,7 @@ Substituting this in the governing equation,
 
 $X_1 = \frac{(k_1 + k_2 - m_2 \omega^2)}{(m_1 m_2 \omega^4 - \{m_1(k_1 + k_2) + m_2 k_1\} \omega^2 + k_1 k_2)}$
   
-$X_2 = \frac{k_1}{(m_1 m_2 \omega^4 - \{m_1(k_1 + k_2) + m_2 k_1\} \omega^2 + k_1 k_2)}
-$  
+$X_2 = \frac{k_1}{(m_1 m_2 \omega^4 - \{m_1(k_1 + k_2) + m_2 k_1\} \omega^2 + k_1 k_2)}$  
 
 
 </center>
