@@ -1,1 +1,1 @@
-## Experiment name
+## Motor on a Foundation as a 2DOF system - Free Vibration

@@ -2,38 +2,81 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "For a 2DOF system, _______ is symmetric",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "mass matrix",
+        "b": "stifness matirx",
+        "c": "damping matrix",
+        "d": "All of the above"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "For a 2DOF system, not only mass matrix, but stiffness and damping matrix are also symmetric.",
+        "b": "For a 2DOF system, not only stiffness matrix, but mass and damping matrix are also symmetric.",
+        "c": "For a 2DOF system, not only damping matrix, but stiffness and mass matrix are also symmetric.",
+        "d": "For a 2DOF system, mass, stiffness and damping matrix are all symmetric."
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "__________ motion is assumed for two masses",
+      "answers": {
+        "a": "Random",
+        "b": "Linear",
+        "c": "Non-Linear",
+        "d": "Harmonic"
+      },
+      "explanations": {
+        "a": "The right answer is (d). Simple harmonic motion is assumed for 2 masses in vibrations.",
+        "b": "The right answer is (d). Simple harmonic motion is assumed for 2 masses in vibrations.",
+        "c": "The right answer is (d). Simple harmonic motion is assumed for 2 masses in vibrations.",
+        "d": "Correct, the right answer is (d). Simple harmonic motion is assumed for 2 masses in vibrations."
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Normal modes corresponds to frequencies",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "Correct, the right answer is (a). Normal modes in mechanical systems correspond to natural frequencies. These frequencies represent the system’s inherent vibration modes, and each mode has a specific frequency at which it vibrates.",
+        "b": "The right answer is (a). Normal modes in mechanical systems correspond to natural frequencies. These frequencies represent the system’s inherent vibration modes, and each mode has a specific frequency at which it vibrates."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Resonance occurs under harmonic excitation ",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "True",
+        "b": "False"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Correct, the right answer is (a). Resonance indeed occurs under harmonic excitation. When a system is subjected to an external force with a frequency close to its natural frequency (or one of its natural frequencies), it can experience significant vibration amplitudes. This phenomenon is known as resonance.",
+        "b": "The right answer is (a). Resonance indeed occurs under harmonic excitation. When a system is subjected to an external force with a frequency close to its natural frequency (or one of its natural frequencies), it can experience significant vibration amplitudes. This phenomenon is known as resonance."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Matrices [m], [c] and [k] are diagonal because",
+      "answers": {
+        "a": "c<sub>2</sub>=k<sub>2</sub>=0",
+        "b": "masses are not physically connected",
+        "c": "both a and b",
+        "d": "none of the above"
+      },
+      "explanations": {
+        "a": "The right answer is (c). Matrices [m], [c] and [k] are diagonal because c2​=k2​=0 imply that there is no coupling between the second DOF and other DOFs and When masses are not physically connected (i.e., they are isolated), the mass matrix can be diagonal.",
+        "b": "The right answer is (c). Matrices [m], [c] and [k] are diagonal because c2​=k2​=0 imply that there is no coupling between the second DOF and other DOFs and When masses are not physically connected (i.e., they are isolated), the mass matrix can be diagonal.",
+        "c": "Correct, the right answer is (c). Matrices [m], [c] and [k] are diagonal because c2​=k2​=0 imply that there is no coupling between the second DOF and other DOFs and When masses are not physically connected (i.e., they are isolated), the mass matrix can be diagonal.",
+        "d": "The right answer is (c). Matrices [m], [c] and [k] are diagonal because c2​=k2​=0 imply that there is no coupling between the second DOF and other DOFs and When masses are not physically connected (i.e., they are isolated), the mass matrix can be diagonal."
       },
       "correctAnswer": "c",
-      "difficulty": "beginner"
+      "difficulty": "advanced"
     }
   ]
 }

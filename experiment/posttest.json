@@ -2,38 +2,89 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "For nontrivial solution of amplitudes, the determinant of coefficient matrix must be equal to",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "First natual frequency",
+        "b": "Zero",
+        "c": "Applied Force",
+        "d": "Second natural frequency"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "The right answer is (b). For a nontrivial solution to exist, we require that det(A)=0 when solving a system of linear equations represented by the coefficient matrix(A). it implies that the matrix A is singular (non-invertible). In this case, the system of equations has infinitely many solutions (including nontrivial ones).",
+        "b": "Correct, the right answer is (b). For a nontrivial solution to exist, we require that det(A)=0 when solving a system of linear equations represented by the coefficient matrix(A). it implies that the matrix A is singular (non-invertible). In this case, the system of equations has infinitely many solutions (including nontrivial ones).",
+        "c": "The right answer is (b). For a nontrivial solution to exist, we require that det(A)=0 when solving a system of linear equations represented by the coefficient matrix(A). it implies that the matrix A is singular (non-invertible). In this case, the system of equations has infinitely many solutions (including nontrivial ones).",
+        "d": "The right answer is (b). For a nontrivial solution to exist, we require that det(A)=0 when solving a system of linear equations represented by the coefficient matrix(A). it implies that the matrix A is singular (non-invertible). In this case, the system of equations has infinitely many solutions (including nontrivial ones)."
       },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "In elastic or static coupling, the resulting motion is",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Rotational",
+        "b": "Translational",
+        "c": "Both a and b",
+        "d": "None of the above"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "The right answer is (c). In static coupling, the resulting motion is both Rotational and Translational. The equations of motion cannot be solved independently; they are coupled, leading to both rotational and translational motion.",
+        "b": "The right answer is (c). In static coupling, the resulting motion is both Rotational and Translational. The equations of motion cannot be solved independently; they are coupled, leading to both rotational and translational motion.",
+        "c": "Correct, the right answer is (c). Static coupling refers to a situation where equations of motion are coupled due to off-diagonal terms in the stiffness matrix. Static coupling arises from off-diagonal terms in the stiffness matrix, affecting both translational and rotational degrees of freedom. The equations of motion cannot be solved independently; they are coupled, leading to both rotational and translational motion.",
+        "d": "The right answer is (c). In static coupling, the resulting motion is both Rotational and Translational. The equations of motion cannot be solved independently; they are coupled, leading to both rotational and translational motion."
       },
       "correctAnswer": "c",
-      "difficulty": "beginner"
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "In dynamic coupling, the resulting motion is",
+      "answers": {
+        "a": "In direction of y axis",
+        "b": "up",
+        "c": "down",
+        "d": "All the above"
+      },
+      "explanations": {
+        "a": "The right option is (d). Dynamic coupling refers to the interactive effects between different degrees of freedom in a system. In dynamic coupling, the resulting motion is in the direction of Y-axis which is also in up and down direction.",
+        "b": "The right option is (d). Dynamic coupling refers to the interactive effects between different degrees of freedom in a system. In dynamic coupling, the resulting motion is in the direction of Y-axis which is also in up and down direction.",
+        "c": "The right option is (d). Dynamic coupling refers to the interactive effects between different degrees of freedom in a system. In dynamic coupling, the resulting motion is in the direction of Y-axis which is also in up and down direction.",
+        "d": "Correct, the right option is (d). Dynamic coupling refers to the interactive effects between different degrees of freedom in a system. In dynamic coupling, the resulting motion is in the direction of Y-axis which is also in up and down direction."
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "A system has a non diagonal stifness matrix, it has",
+      "answers": {
+        "a": "elastic coupling",
+        "b": "static coupling",
+        "c": "Both a and b",
+        "d":"None of the above"        
+      },
+      "explanations": {
+        "a": "The right answer is (c). Elastic coupling refers to the transfer of energy between different modes of motion (e.g., translational and rotational) in a system. When the stiffness matrix is non-diagonal, it implies that the system’s stiffness properties are interconnected. As a result, energy can be exchanged between different degrees of freedom, leading to elastic coupling.Static coupling arises from off-diagonal terms in the stiffness matrix. It occurs when equations of motion are interconnected due to coupling between translational and rotational degrees of freedom. Therefore, a system with a non-diagonal stiffness matrix exhibits both elastic coupling and static coupling.",
+        "b": "The right answer is (c). Elastic coupling refers to the transfer of energy between different modes of motion (e.g., translational and rotational) in a system. When the stiffness matrix is non-diagonal, it implies that the system’s stiffness properties are interconnected. As a result, energy can be exchanged between different degrees of freedom, leading to elastic coupling.Static coupling arises from off-diagonal terms in the stiffness matrix. It occurs when equations of motion are interconnected due to coupling between translational and rotational degrees of freedom. Therefore, a system with a non-diagonal stiffness matrix exhibits both elastic coupling and static coupling.",
+        "c": "Correct, the right answer is (c). Elastic coupling refers to the transfer of energy between different modes of motion (e.g., translational and rotational) in a system. When the stiffness matrix is non-diagonal, it implies that the system’s stiffness properties are interconnected. As a result, energy can be exchanged between different degrees of freedom, leading to elastic coupling.Static coupling arises from off-diagonal terms in the stiffness matrix. It occurs when equations of motion are interconnected due to coupling between translational and rotational degrees of freedom. Therefore, a system with a non-diagonal stiffness matrix exhibits both elastic coupling and static coupling.",
+        "d": "The right answer is (c). Elastic coupling refers to the transfer of energy between different modes of motion (e.g., translational and rotational) in a system. When the stiffness matrix is non-diagonal, it implies that the system’s stiffness properties are interconnected. As a result, energy can be exchanged between different degrees of freedom, leading to elastic coupling.Static coupling arises from off-diagonal terms in the stiffness matrix. It occurs when equations of motion are interconnected due to coupling between translational and rotational degrees of freedom. Therefore, a system with a non-diagonal stiffness matrix exhibits both elastic coupling and static coupling."
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "A system has a non diagonal damping matrix, it has",
+      "answers": {
+        "a": "Damping Coupling",
+        "b": "Velocity coupling",
+        "c": "Both a and b",
+        "d": "All the above"
+      },
+      "explanations": {
+        "a": "The right answer is (c). When the damping matrix is non-diagonal, it means that the damping forces or dissipation mechanisms are interconnected across different modes of motion. These coupling effects lead to complex interactions between translational and rotational modes, resulting in damping coupling. In systems with non-diagonal damping, the damping forces depend not only on the velocity of a single mode but also on the velocities of other modes. This velocity-dependent coupling affects the overall system behavior. Therefore, a non-diagonal damping matrix results in both damping coupling and velocity coupling.",
+        "b": "The right answer is (c). When the damping matrix is non-diagonal, it means that the damping forces or dissipation mechanisms are interconnected across different modes of motion. These coupling effects lead to complex interactions between translational and rotational modes, resulting in damping coupling. In systems with non-diagonal damping, the damping forces depend not only on the velocity of a single mode but also on the velocities of other modes. This velocity-dependent coupling affects the overall system behavior. Therefore, a non-diagonal damping matrix results in both damping coupling and velocity coupling.",
+        "c": "Correct, the right answer is (c). When the damping matrix is non-diagonal, it means that the damping forces or dissipation mechanisms are interconnected across different modes of motion. These coupling effects lead to complex interactions between translational and rotational modes, resulting in damping coupling. In systems with non-diagonal damping, the damping forces depend not only on the velocity of a single mode but also on the velocities of other modes. This velocity-dependent coupling affects the overall system behavior. Therefore, a non-diagonal damping matrix results in both damping coupling and velocity coupling.",
+        "d": "The right answer is (c). When the damping matrix is non-diagonal, it means that the damping forces or dissipation mechanisms are interconnected across different modes of motion. These coupling effects lead to complex interactions between translational and rotational modes, resulting in damping coupling. In systems with non-diagonal damping, the damping forces depend not only on the velocity of a single mode but also on the velocities of other modes. This velocity-dependent coupling affects the overall system behavior. Therefore, a non-diagonal damping matrix results in both damping coupling and velocity coupling."
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
     }
   ]
 }
